@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omen Signal Foundation</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0d0c1d 0%, #1a1a2e 100%);
+      color: #e0e0e0;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .login-container {
+      background-color: #111018;
+      border: 2px solid #2a2a5e;
+      border-radius: 10px;
+      width: 320px;
+      padding: 30px;
+      box-shadow: 0 0 20px #2a2a5e;
+    }
+    .login-container h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #9f9fff;
+      text-shadow:
+        0 0 5px #9f9fff,
+        0 0 10px #9f9fff,
+        0 0 20px #5c5cff;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: #bfbfff;
+      letter-spacing: 0.5px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #383875;
+      border-radius: 5px;
+      background-color: #1a1a2e;
+      color: #c9c9ff;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #5c5cff;
+      box-shadow: 0 0 8px #5c5cff;
+      background-color: #222240;
+    }
+    button {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #3a3ab8;
+      border: none;
+      border-radius: 5px;
+      color: #e0e0ff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 0 12px #5c5cff;
+      transition: background-color 0.3s;
+    }
+    button:hover, button:focus {
+      background-color: #5858f0;
+      box-shadow: 0 0 18px #8b8bff;
+      outline: none;
+    }
+    .footer-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #7070b0;
+      user-select: none;
+      letter-spacing: 1px;
+    }
+    .footer-text span {
+      color: #9090ff;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main role="main" class="login-container" aria-label="Spooky Government Login Form">
+    <h1>Omen Signal Foundation</h1>
+    <form onsubmit="return handleLogin(event)" novalidate>
+      <label for="username">Username</label>
+      <input 
+        type="text" 
+        id="username" 
+        name="username" 
+        autocomplete="username" 
+        required 
+        aria-required="true" 
+        aria-describedby="userHelp" 
+        placeholder="Enter ID" 
+        spellcheck="false"
+      />
+      <label for="password">Password</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        autocomplete="current-password" 
+        required 
+        aria-required="true" 
+        placeholder="Enter Secure Password"
+      />
+      <button type="submit" aria-label="Authenticate">
+        Access Terminal
+      </button>
+    </form>
+    <p id="loginStatus" role="alert" aria-live="polite" style="margin-top:15px; color:#ff7070; display:none;"></p>
+    <p class="footer-text">Authorized Personnel Only — <span>Top Secret Clearance Required</span></p>
+  </main>
+  <script>
+  function handleLogin(event) {
+    event.preventDefault();
+    const user = event.target.username.value.trim();
+    const pass = event.target.password.value;
+
+    const statusEl = document.getElementById('loginStatus');
+    statusEl.style.display = 'none';
+    statusEl.textContent = '';
+
+    const validUsers = {
+      'agent47': 'shadowX9!',
+      'phantom': 'ghost#42',
+      'nightowl': 'moonlit2024'
+    };
+
+    if (user in validUsers && validUsers[user] === pass) {
+      showHomePage(user);
+    } else {
+      statusEl.textContent = 'Access denied. Invalid credentials.';
+      statusEl.style.display = 'block';
+    }
+
+    return false;
+  }
+
+  function showHomePage(user) {
+    const main = document.querySelector('main.login-container');
+    main.innerHTML = `
+      <h1>Welcome, ${user}!</h1>
+      <p>You have successfully logged in to the Omen Signal Foundation terminal.</p>
+      <section>
+        <h2>Dashboard</h2>
+        <ul>
+          <li>Access classified info</li>
+          <li>Manage your profile</li>
+          <li>Review mission data</li>
+        </ul>
+      </section>
+      <button onclick="location.reload()">Log out</button>
+    `;
+  }
+</script>
+</body>
+</html>
