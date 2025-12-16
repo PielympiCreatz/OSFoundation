@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research Logs - Omen Signal Foundation</title>
+  <style>
+    body {
+      background: #f8f8f2;
+      color: #222;
+      font-family: 'Georgia', serif;
+      padding: 40px 60px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 25px rgba(0,0,0,0.2);
+      background-color: #fcfcfc;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    h1 {
+      color: #2d2d84;
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      border-bottom: 3px solid #2d2d84;
+      padding-bottom: 10px;
+      user-select: none;
+    }
+    article {
+      border: 2px solid #2d2d84;
+      border-radius: 6px;
+      margin-bottom: 40px;
+      padding: 25px 35px;
+      background-color: #f0f0ff;
+      box-shadow: 3px 3px 10px rgba(45, 45, 132, 0.15);
+      position: relative;
+    }
+    article::before {
+      content: "CLASSIFIED";
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #a00000;
+      letter-spacing: 2px;
+      font-family: 'Courier New', Courier, monospace;
+      text-transform: uppercase;
+      border: 1px solid #a00000;
+      padding: 2px 8px;
+      border-radius: 3px;
+      background: #fff0f0;
+      user-select: none;
+    }
+    article h2 {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #2d2d84;
+      padding-bottom: 4px;
+      color: #222055;
+      user-select: none;
+    }
+    section.meta {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 20px;
+    }
+    section.meta span {
+      display: inline-block;
+      min-width: 130px;
+      font-weight: 700;
+      color: #2d2d84;
+      user-select: none;
+    }
+    section.content {
+      line-height: 1.49;
+      font-size: 1rem;
+      color: #222;
+      margin-bottom: 18px;
+      white-space: pre-line;
+    }
+    section.content h3 {
+      margin-top: 25px;
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #3a3a8f;
+      border-bottom: 1px solid #b0b0dc;
+      padding-bottom: 4px;
+      user-select: none;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 15px;
+      background: #2d2d84;
+      color: #f0f0f8;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-shadow: 0 0 15px #2d2d84;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .back-button:hover, .back-button:focus {
+      background: #4646b6;
+      outline: none;
+      box-shadow: 0 0 22px #5555ee;
+    }
+  </style>
+</head>
+<body>
+  <h1>Research Logs</h1>
+
+  <article role="article" aria-label="Research report by Dr. Mariana Holt">
+    <h2>Report by Dr. Mariana Holt</h2>
+    <section class="meta" aria-label="Report metadata">
+      <div><span>Date:</span> 02/03/----</div>
+      <div><span>Classification:</span> Level 4 – Restricted</div>
+      <div><span>Author:</span> Dr. Mariana Holt</div>
+    </section>
+    
+<section class="content">
+  <h3>Incident Summary</h3>
+  <p>
+    At approximately 02:13 HRS, local emergency services reported multiple 911 calls from residents on Garnet Street describing “animal screaming,” unidentified movement on rooftops, and at least one resident reporting a shape “crawling like a broken thing.”
+    OSF intercept protocols flagged the cluster due to audio irregularities captured in emergency-channel recordings. Field Unit K6-2 was deployed at 02:28 HRS.
+    Upon arrival, agents discovered three deceased civilians, extensive structural damage, and a previously undocumented hostile entity. The entity fled the scene before containment could be established.
+    This report marks the first official recorded incident under the Omen Signal Foundation’s operational authority.
+  </p>
+  <h3>PRELIMINARY ANALYSIS</h3>
+  <p>
+    The entity demonstrates clear predatory behavior, possibly opportunistic but highly aggressive. No known biological species matches the skeletal posture or movement patterns. Secretion samples suggest non-standard hemoglobin structure with crystalline fragments embedded.
+    Theory suggests extrabiological origin or severe mutation via an anomalous event.
+    OSF Command has authorized ongoing surveillance of the Red Arbor region.
+  </p>
+  <h3>STATUS</h3>
+  <p>
+    Incident IR-A01: CLOSED (ACTIVE THREAT CONTINUES)<br>
+    Entity Status: Unconfirmed location — ACTIVE & UNCONTAINED<br><br>
+  </p>
+</section>
+  </article>
+
+  <article role="article" aria-label="Research report by Dr. Mariana Holt">
+    <h2>Report by Dr. Mariana Holt</h2>
+    <section class="meta" aria-label="Report metadata">
+      <div><span>Date:</span> 03/19/----</div>
+      <div><span>Classification:</span> Level 4 – Restricted</div>
+      <div><span>Author:</span> Dr. Mariana Holt</div>
+    </section>
+    <section class="content">
+  <h3>Incident Summary</h3>
+  <p>
+    At 21:46 HRS, the Wyoming Highway Patrol reported a disabled civilian vehicle found abandoned beneath the Highway 61 underpass. The responding troopers described “a strange bend in the road that wasn’t there before” and refused to approach the underpass further after hearing “something breathing inside the concrete.”
+OSF Pattern Recognition flagged the report due to similarities with prior low-grade distortion sightings in the region. Field Unit H9-1 was deployed.
+Upon arrival, agents discovered a localized spatial expansion within the underpass—an impossible 72-meter interior stretch inside a structure physically only 18 meters long. Within the extended corridor were two deceased civilians and a hostile, space-distorted lifeform unresponsive to standard weaponry.
+This event represents the Foundation’s first confirmed emergence of a spatial anomaly forming around a living threat.
+  </p>
+  <h3>PRELIMINARY ANALYSIS</h3>
+  <p>
+    Spatial-anomalous threats are officially confirmed. This entity appears to warp the environment around itself, not through physical strength but through a yet-unknown extradimensional effect. Victim injuries suggest the anomaly forces biological structures beyond safe extension limits.
+While the entity escaped during spatial collapse, it is unclear whether it fled into the physical world or into an extradimensional pocket.
+Risk of recurrence is rated HIGH.
+OSF Command has declared a 12-mile radius monitoring perimeter around Marrow Creek
+  </p>
+  <h3>STATUS</h3>
+  <p>
+    Incident IR-A02: CLOSED (ACTIVE THREAT CONTINUES)<br>
+    Entity Status: Unconfirmed location — ACTIVE & UNCONTAINED<br><br>
+  </p>
+</section>
+  </article>
+  </article>
+
+  <a href="index.html" class="back-button" aria-label="Return to dashboard">Back to Dashboard</a>
+</body>
+</html>
